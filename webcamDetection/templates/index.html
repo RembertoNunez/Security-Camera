@@ -1,0 +1,156 @@
+<!--This is our main HTML where our program will be on -->
+<html>
+<title>Pedestrian Tracker OpenCV</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<body class="w3-content" style="max-width:1300px">
+
+<!-- First Grid: Logo & About -->
+<div class="w3-row">
+  <div class="w3-half w3-black w3-container w3-center" style="height:700px">
+    <div class="w3-padding-64">
+      <h1>Pedestrian/Face Tracker</h1>
+    </div>
+    <img id="bg" src="{{ url_for('video_feed') }}">
+    </script>
+  </div>
+  <div class="w3-half w3-blue-grey w3-container" style="height:700px">
+    <div class="w3-padding-64 w3-center">
+      <h1>Quick Info</h1>
+      <img src="/w3images/avatar3.png" class="w3-margin w3-circle" alt="Person" style="width:50%">
+      <div class="w3-left-align w3-padding-xxlarge">
+        <p>Hello, and welcome to our python web application that implements face and body detection!
+        We are proud to conclude that our project that we set our to build is quite operational.
+
+        What is this project?
+
+        This program allows us to track users body and face in realtime (with the exception of some latency)
+        within a web application running off your local machine!
+      </p>
+        <p>
+          About this tracker! What is this tracker and what is its main purpose? This program is a live facial and body detection.
+          It's purpose is that it is able to detect and see people in the camera pathway.
+        </p>
+        <p>
+          To the left you will see the tracker working!
+          As you may notice this tracker has some latency as it is rendering the image live and detecting live objects.
+          We are currently working to reduce latency and implement a program that will allow users to be able to record video off the web.
+        </p>
+        <h3> Powered by:</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/OpenCV_Logo_with_text.png" width = 100 height = 125>
+        <img src="http://www.pngall.com/wp-content/uploads/2016/05/Python-Logo-Free-Download-PNG.png" width = 100 height = 125>
+        <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" width = 100 height = 125>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid: Work & Resume -->
+<div class="w3-row">
+  <div class="w3-half w3-light-grey w3-center" style="min-height:800px" id="work">
+    <div class="w3-padding-64">
+      <h2>How does this project work?</h2>
+      <p>This project is a combination of Python files and HTML. This webcam is running completely of OpenCV rather than an embedded JS webcam!</p>
+      <h2>That's cool, but why?</h2>
+      <p>
+      Well the idea to be able to track bodies and faces with a webcam came from some problems with
+      ding dong ditchers in my neighborhood. So, we thought it would be interesting to create an application
+      that one could hook up a webcam to their machine and track people live within the scope of the camera.
+      The program is surprisingly accurate and works fine in low light situations. Security systems typically
+      lack the technology to tell if there are people currently in the area, so one may miss someone in the crowd.
+      This can cause problems if there is a criminal that a security system was unable to track or clearly point out.
+      This program that our team will develop will allow users see all persons within a camera's scope using OpenCV and Python.
+      With the application users will be able to use their computer camera to actively track and view how many people are in the stream.
+      </p>
+      <h2>What did the team learn in this project?</h2>
+      <p>
+      We learned how to work with openCV in greater depth as well as work with flask.
+      These are both libraries that we have never used before, so the project was a very large
+      learning process. Timing and collaboration was a huge factor in this project as we managed to
+      work on the project a bit by bit at a time and was able to combine our strengths to do a
+      significant push every week on the project despite complications.It was a great
+      experience to work with new teammates and accomplish the initial goal that we set to make.
+      </p>
+    </div>
+    <div class="w3-row">
+      <div class="w3-half">
+        <img src="/w3images/coffee.jpg" style="width:100%">
+      </div>
+      <div class="w3-half">
+        <img src="/w3images/workbench.jpg" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-row w3-hide-small">
+      <div class="w3-half">
+        <img src="/w3images/workbench.jpg" style="width:100%">
+      </div>
+      <div class="w3-half">
+        <img src="/w3images/coffee.jpg" style="width:100%">
+      </div>
+    </div>
+
+    <div class="w3-row w3-hide-small">
+      <div class="w3-half">
+        <img src="/w3images/sound.jpg" style="width:100%">
+      </div>
+      <div class="w3-half">
+        <img src="/w3images/workbench.jpg" style="width:100%">
+      </div>
+    </div><br>
+  </div>
+  <div class="w3-half w3-indigo w3-container" style="min-height:800px">
+    <div class="w3-padding-64 w3-center">
+      <h2>The Dev Team</h2>
+      <iframe src="https://drive.google.com/file/d/0B_rKfCM5QpSmYV9TNUFicWNqZUU/preview" width="540" height="380"></iframe>
+      <h3>From left to right: Remberto, Mayra, Jeremy</h3>
+      <p></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Third Grid: Swing By & Contact -->
+<div class="w3-row" id="contact">
+  <div class="w3-half w3-dark-grey w3-container w3-center" style="height:700px">
+    <div class="w3-padding-64">
+      <h1>About us</h1>
+      <p> We are currently first year university students that attend CSUMB.
+          Remberto and Mayra are both in the CSin3 cohort, and Jeremy is in the CS++ cohort.
+      </p>
+      <p>Let's Talk code!</p>
+      <p>California State University Monterey Bay</p>
+      <p>BIT 110</p>
+      <p>2-4 PM Tues, Thurs</p>
+    </div>
+    <div class="w3-padding-64">
+    </div>
+  </div>
+  <div class="w3-half w3-teal w3-container" style="height:700px">
+    <div class="w3-padding-64 w3-padding-xxlarge">
+      <h1>Sources For Our program</h1>
+      <h3>Awesome job guys! Did you do this all by yourself?</h3>
+      <p>
+      Well, we did not do this all by ourself as we researched and worked with
+      alongside many useful tutorials avaliable to everyone. They are very excellent tutorials
+      and I highly suggest that you check them out! Here are the websites that accessed
+      and implemented in our project:
+    </p>
+      <a href ="https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_fifty&stacked=h">Templates</a>
+      <h1></h1>
+      <a href ="http://www.chioka.in/python-live-video-streaming-example/">OpenCV Video Streaming</a>
+      <h1></h1>
+      <a href ="https://realpython.com/blog/python/face-recognition-with-python/">Facial Recognition</a>
+      <h1></h1>
+      <a href ="http://www.pyimagesearch.com/2015/11/09/pedestrian-detection-opencv/">Body Recognition</a>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-black w3-padding-16">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+</body>
+</html>
