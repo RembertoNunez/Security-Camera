@@ -15,8 +15,6 @@ Name of project: Pedestrian Tracking OpenCV
 Name of team members: Mayra, Remberto, Jeremy
 Class: CST 205
 Date: 3/15/17
-Link to GitHub: https://github.com/CSUMB-SP17-CST205/proj2-team28
-Link to C9: https://ide.c9.io/jeremycsumb/jeremy-csumb?
 TA: Samuel 
 
 Hello, and welcome to our python web application that implements face and body detection!
